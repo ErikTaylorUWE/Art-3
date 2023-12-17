@@ -3,7 +3,8 @@ let Xs = [];
 let Ys = [];
 
 function setup() {
-  createCanvas(400, 400);
+  let canvas = createCanvas(400, 400);
+  canvas.parent('canvas-frame');
   background(220);
   // create 40 bees, at random positions
   for (let i = 1; i < 40; i++) {
